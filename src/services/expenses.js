@@ -29,8 +29,8 @@ export const getExpenses = async(dispatch) => {
 export const NewExpense = async(dispatch, expense) => {
     try{
         //api call
-        dispatch(ActionCreators.newExpense({id: 10 , description : expense.description, amount : expense.amount}));
+        dispatch(ActionCreators.newExpenses({id: 10 , description : expense.description, amount : expense.amount}));
     }
 
-    catch(error){console.log('error')}
+    catch(error){console.log(error)}
 }
